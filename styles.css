@@ -1,0 +1,361 @@
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --white:#ffffff;
+    --secondary:#898989;
+    --light:#F2F2F2;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 89%,0 80%);
+    
+}
+.brand-size{
+    width: 30px;
+    height: 30px;
+}
+.header-section{
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+header nav .left a{
+    color: var(--white);
+    font-size: 9px;
+    text-decoration: none;
+    margin-right: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+}
+header nav .left a:hover{
+    color: var(--primary);
+
+}
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav{
+    padding-top: 20px;
+}
+.brand-logo{
+    margin-right: 10px;
+}
+header nav .right button{
+    height: 30px;
+    width: 60px;
+    background-color: var(--primary);
+    color: var(--dark);
+    border: solid 1px var(--primary);
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero-image{
+    margin-top: 20px;
+}
+.hero-image img{
+    width: 100px;
+}
+.hero-image .left{
+    margin-top: 10px;
+}
+.hero-image .right{
+    color: var(--white);
+}
+.hero-image .right h1{
+    font-size: 1.4rem;
+    color: var(--white);
+    letter-spacing: 0.1rem;
+    max-width: 180px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 1.7rem;
+}
+.hero-image .right h1 span{
+    color: var(--primary);
+}
+.hero-image .right h6{
+    font-size: 0.6rem;
+    font-weight: 300;
+    color: var(--primary);
+    margin-bottom: 7px;
+
+}
+.hero-image .right p{
+    font-size: 0.5rem;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.hero-image .right button{
+    width: 120px;
+    height: 30px;
+    font-size: 0.7rem;
+    color: var(--primary);
+    background-color: var(--dark);
+    border: 2px solid var(--primary);
+}
+.hero-image .right{
+    margin-left: 30px;
+}
+.about .about-container img{
+    width: 100px;
+    margin-left: 10px;
+}
+.about .about-container h2{
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-left: 20px;
+}
+.about .about-container h6{
+    color: var(--secondary);
+    font-size: 0.6rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.about .about-container p{
+    margin-left: 20px;
+    font-size: 0.5rem;
+    max-width: 170px;
+}
+section.services{
+    background:var(--light);
+    padding-top: 2px;
+}
+.container h1{
+    font-size: 13px;
+    text-align: center;
+    margin-top:30px ;
+    font-weight: 600;
+    color: var(--primary);
+}
+.container p{
+    font-size: 0.5rem;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 50px;
+
+}
+.container .wrapper img{
+    width: 60px;
+    height: 50px;
+
+}
+section.services .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 2rem;
+
+}
+section.services .wrapper .card{
+    background: var(--white);
+    position: relative;
+    transition: all 0.3s ease;
+}
+section.services .wrapper .card img{
+    position: absolute;
+    top: -1.7rem;
+    left: 30%;
+    margin-bottom: 20px
+    
+}
+section.services .wrapper .card h2{
+
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 30px;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+section.services .wrapper .card p{
+    text-align: center;
+    font-size: 0.5rem;
+    color: var(--dark);
+}
+section.services .wrapper .card:hover{
+    background: var(--dark);
+}
+section.services .wrapper .card h2:hover{
+    color: var(--light);
+}
+section.services .wrapper .card p:hover{
+    color: var(--light);
+}
+
+@media(min-width:768px){
+    .brand-size{
+        width: 60px;
+        height: 60px;
+    }
+    
+    header nav .left a{
+        font-size: 1.3rem;
+        margin-right: 0.9rem;
+    }
+   .brand-logo{
+       margin-left: 50px;
+       margin-right: 50px;
+   }
+   header nav .right button{
+       width: 150px;
+       height: 60px;
+       font-size: 1.3rem;
+   }
+   .hero-image{
+       margin-top: 3rem;
+   }
+   .hero-image img{
+       width: 250px;
+   }
+   .hero-image .left{
+       margin-left: 50px;
+   }
+   
+   .hero-image .right h1{
+       font-size: 1.5rem;
+       letter-spacing: 0.1rem;
+       line-height: 1.7rem;
+       font-weight: 400;
+       margin-left: 10px;
+   }
+   .hero-image .right h6{
+       font-size: 1.2rem;
+       margin-top: -90px;
+       margin-left: 10px;
+   }
+   .hero-image .right p{
+       font-size: 0.9rem;
+       font-weight: 300;
+       margin-bottom: 20px;
+       margin-left: 10px;
+   }
+   .hero-image .right button{
+       margin-left: 10px;
+   }
+   .about .about-container img{
+       width: 200px;
+       margin-left: 100px;
+       margin-top: -20px;
+   }
+   .about .about-container h2{
+       font-size: 3rem;
+   }
+   .about .about-container h6{
+       font-size: 1.2rem;
+   }
+   .about .about-container p{
+       font-size: 1rem;
+    
+       max-width: 400px;
+   }
+   .about .about-container .about-data{
+       margin-left: -100px;
+   }
+   .container h1{
+       font-size: 2.4rem;
+       font-weight: 400;
+   }
+   .container p{
+       font-size: 1.2rem;
+   }
+   section.services .wrapper{
+       grid-template-columns: repeat(2,1fr);
+       grid-row-gap: 2.3rem;
+   }
+   section.services .wrapper .card h2{
+       font-size: 1.7rem;
+   }
+   section.services .wrapper .card p{
+       font-size: 1.1rem;
+       text-align: center;
+
+   }
+   .container .wrapper img{
+    width: 80px;
+    height: 60px;
+   }
+   section.services .wrapper .card img{
+       left: 40%;
+   }
+
+
+}
+@media(min-width:1024px){
+    .brand-logo{
+        margin-right: 130px;
+        margin-left: 50px;
+    }
+    
+    header nav .left a{
+        margin-right: 1rem;
+    }
+    header nav .right button{
+        width: 200px;
+        font-size: 2rem;
+    }
+    header nav{
+        max-width: 1000px;
+    }
+    .hero-image{
+        margin-left: 40px;
+    }
+    .hero-image img{
+        width: 400px;
+    }
+    .hero-image .right h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+        max-width: 500px;
+        letter-spacing: 0.4rem;
+        margin-bottom: 40px;
+    }
+    .hero-image .right p{
+        font-size:1.5rem;
+        margin-bottom: 50px;
+    }
+    .hero-image .right h6{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-image .right button{
+        width: 200px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+    .about .about-container img{
+        width: 300px;
+    }
+    .about .about-container h2{
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+    .about .about-container h6{
+        font-size: 2rem;
+    }
+    .about .about-container p{
+        max-width: 550px;
+        font-size: 1.3rem;
+    }
+    .container h1{
+        font-size: 3rem;
+    }
+    .container p{
+        font-size: 1.6rem;
+    }
+    section.services .wrapper{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
