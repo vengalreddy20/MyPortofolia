@@ -128,22 +128,25 @@ margin-top: 10px;
 }
 .about .about-container p{
     margin-left: 20px;
-    font-size: 0.5rem;
-    max-width: 250px;
+    font-size: 0.6rem;
+    max-width: 270px;
+    line-height: 0.9rem;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
 }
 section.services{
     background:var(--light);
     padding-top: 2px;
 }
 .container h1{
-    font-size: 13px;
+    font-size: 20px;
     text-align: center;
     margin-top:30px ;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--primary);
 }
 .container p{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     text-align: center;
     font-weight: 300;
     margin-top: 5px;
@@ -177,7 +180,7 @@ section.services .wrapper .card img{
 section.services .wrapper .card h2{
 
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     padding-top: 30px;
     text-align: center;
     color: var(--primary);
@@ -185,8 +188,11 @@ section.services .wrapper .card h2{
 }
 section.services .wrapper .card p{
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: var(--dark);
+    padding-top: 10px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1rem;
 }
 section.services .wrapper .card:hover{
     background: var(--dark);
@@ -196,6 +202,9 @@ section.services .wrapper .card h2:hover{
 }
 section.services .wrapper .card p:hover{
     color: var(--light);
+}
+section.services{
+    height: 77vh;
 }
 
 @media(min-width:768px){
@@ -208,7 +217,7 @@ section.services .wrapper .card p:hover{
     }
     
     header nav .left a{
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-right: 0.9rem;
     }
    .brand-logo{
@@ -271,8 +280,9 @@ section.services .wrapper .card p:hover{
    }
    .about .about-container p{
        font-size: 1rem;
+       line-height: 1.5rem;
     
-       max-width: 400px;
+       max-width: 430px;
    }
    .about .about-container .about-data{
        margin-left: -100px;
@@ -287,13 +297,16 @@ section.services .wrapper .card p:hover{
    section.services .wrapper{
        grid-template-columns: repeat(2,1fr);
        grid-row-gap: 2.3rem;
+       grid-column-gap: 1.5rem;
    }
    section.services .wrapper .card h2{
        font-size: 1.7rem;
+       padding-top: 50px;
    }
    section.services .wrapper .card p{
        font-size: 1.1rem;
        text-align: center;
+       line-height: 1.7rem;
 
    }
    .container .wrapper img{
@@ -303,8 +316,9 @@ section.services .wrapper .card p:hover{
    section.services .wrapper .card img{
        left: 40%;
    }
-
-
+   section.services{
+       height: 97vh;
+   }
 }
 @media(min-width:1024px){
     .brand-logo{
@@ -314,6 +328,7 @@ section.services .wrapper .card p:hover{
     
     header nav .left a{
         margin-right: 1rem;
+        font-size: 1.5rem;
     }
     header nav .right button{
         width: 200px;
@@ -350,6 +365,7 @@ section.services .wrapper .card p:hover{
     }
     .about .about-container img{
         width: 300px;
+        height: 600px;
     }
     .about .about-container h2{
         font-size: 4rem;
@@ -359,7 +375,8 @@ section.services .wrapper .card p:hover{
         font-size: 2rem;
     }
     .about .about-container p{
-        max-width: 550px;
+        max-width: 600px;
+        line-height: 2rem;
         font-size: 1.3rem;
     }
     .container h1{
@@ -370,5 +387,26 @@ section.services .wrapper .card p:hover{
     }
     section.services .wrapper{
         grid-template-columns: repeat(4,1fr);
+    }
+    section.services .wrapper .card h2{
+        font-size: 1.5rem;
+        padding-top: 70px;
+    }
+    section.services .wrapper .card p{
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        text-align: center;
+        padding-top: 20px;
+ 
+    }
+    .container .wrapper img{
+     width: 100px;
+     height: 70px;
+    }
+    section.services .wrapper .card img{
+        left: 30%;
+    }
+    section.services{
+        height: 60vh;
     }
 }
