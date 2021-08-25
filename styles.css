@@ -15,7 +15,7 @@ body{
 }
 header{
     background-color: var(--dark);
-    clip-path: polygon(0 0,100% 0,100% 100%,70% 89%,0 80%);
+    
     
 }
 .brand-size{
@@ -30,7 +30,8 @@ header nav .left a{
     color: var(--white);
     font-size: 9px;
     text-decoration: none;
-    margin-right: 5px;
+    margin-right: 2px;
+    margin-left: 10px;
     text-transform: uppercase;
     transition: all 0.3s ease;
 
@@ -67,25 +68,25 @@ header nav .right button{
     width: 100px;
 }
 .hero-image .left{
-    margin-top: 10px;
+margin-top: 10px;
 }
 .hero-image .right{
     color: var(--white);
 }
 .hero-image .right h1{
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     color: var(--white);
     letter-spacing: 0.1rem;
     max-width: 180px;
     margin-bottom: 10px;
     font-weight: 400;
-    line-height: 1.7rem;
+    line-height: 1.2rem;
 }
 .hero-image .right h1 span{
     color: var(--primary);
 }
 .hero-image .right h6{
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-weight: 300;
     color: var(--primary);
     margin-bottom: 7px;
@@ -97,7 +98,7 @@ header nav .right button{
     margin-bottom: 10px;
 }
 .hero-image .right button{
-    width: 120px;
+    width: 100px;
     height: 30px;
     font-size: 0.7rem;
     color: var(--primary);
@@ -109,7 +110,9 @@ header nav .right button{
 }
 .about .about-container img{
     width: 100px;
+    height: 170px;
     margin-left: 10px;
+    margin-top: 20px;
 }
 .about .about-container h2{
     color: var(--primary);
@@ -126,7 +129,7 @@ header nav .right button{
 .about .about-container p{
     margin-left: 20px;
     font-size: 0.5rem;
-    max-width: 170px;
+    max-width: 250px;
 }
 section.services{
     background:var(--light);
@@ -200,6 +203,9 @@ section.services .wrapper .card p:hover{
         width: 60px;
         height: 60px;
     }
+    header{
+        clip-path: polygon(0 0,100% 0,100% 100%,75% 85%,0 80%);
+    }
     
     header nav .left a{
         font-size: 1.3rem;
@@ -223,30 +229,37 @@ section.services .wrapper .card p:hover{
    .hero-image .left{
        margin-left: 50px;
    }
-   
+   .hero-image .right{
+       margin-bottom: 50px;
+   }
    .hero-image .right h1{
        font-size: 1.5rem;
        letter-spacing: 0.1rem;
-       line-height: 1.7rem;
+       line-height: 1.8rem;
        font-weight: 400;
        margin-left: 10px;
+       margin-bottom: 10px;
    }
    .hero-image .right h6{
        font-size: 1.2rem;
        margin-top: -90px;
        margin-left: 10px;
+
    }
    .hero-image .right p{
        font-size: 0.9rem;
        font-weight: 300;
-       margin-bottom: 20px;
+       margin-bottom: 30px;
        margin-left: 10px;
    }
    .hero-image .right button{
        margin-left: 10px;
+       width: 140px;
+       height: 40px;
    }
    .about .about-container img{
        width: 200px;
+       height: 350px;
        margin-left: 100px;
        margin-top: -20px;
    }
